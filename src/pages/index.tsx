@@ -1,44 +1,25 @@
-import type {ReactNode} from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import Heading from '@theme/Heading';
+import { Benefits } from "../components/app/benefits";
+import { Browsing } from "../components/app/browsing";
+import { Experience } from "../components/app/experience";
+import { Footer } from "../components/app/footer";
+import { Header } from "../components/app/header";
+import Hero from "../components/app/hero";
+import { Intersection } from "../components/app/intersection";
+import { PartnerShip } from "../components/app/partnership";
+import { Performance } from "../components/app/performance";
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+export default function Home() {
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
-
-export default function Home(): ReactNode {
-  const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
+    <div className="min-h-screen bg-brand-home_bg overflow-hidden">
+      <Header />
+      <Hero />
+      <Browsing />
+      <Performance />
+      <PartnerShip />
+      <Benefits />
+      <Intersection />
+      <Experience />
+      <Footer />
+    </div>
   );
 }
