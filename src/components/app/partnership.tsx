@@ -23,13 +23,13 @@ export function PartnerShip() {
 
       <div className="container">
         <div className="flex flex-col gap-4 items-center text-center">
-          <h2 className="text-brand-black-100 font-matter text-4xl font-bold text-center max-w-2xl mx-auto leading-normal">
+          <h2 className="text-brand-black-100 font-matter ~text-xl/4xl font-bold text-center max-w-2xl mx-auto">
             A Platform Built on Extensibility and
             <span className="text-brand-orange-200 block">
               Global Partnerships
             </span>
           </h2>
-          <p className="text-brand-black-200 font-matter font-light max-w-4xl text-lg">
+          <p className="text-brand-black-200 font-matter font-light max-w-4xl ~text-sm/lg">
             At the heart of WootzApp is our unique extension system—a
             first-of-its-kind solution on mobile. This allows AI companies to
             design custom, iterative, non-standard labeling workflows, while
@@ -37,36 +37,47 @@ export function PartnerShip() {
           </p>
         </div>
 
-        <div className="flex mt-16 gap-8">
-          {data.map((e) => {
-            return (
-              <div className="flex bg-brand-white-100 p-5 gap-4 rounded-md">
-                <img src={e.img} alt="#" className="object-cover size-20" />
-                <div className="flex gap-4 flex-col justify-start">
-                  <h4 className="text-brand-black-100 font-matter text-xl font-bold max-w-3xl leading-normal tracking-wide">
-                    {e.head}
-                  </h4>
-                  <p className="text-[#4D4846] font-matter font-light max-w-xl text-lg">
-                    {e.para}
-                  </p>
+        <div className="flex flex-col mt-16">
+          <div className="flex max-md:gap-6 md:gap-6 lg:gap-8 xl:gap-10 max-md:flex-col">
+            {data.map((e) => {
+              return (
+                <div className="flex bg-brand-white-100 p-5 gap-4 rounded-md basis-full z-10 max-lg:gap-3">
+                  <img
+                    src={e.img}
+                    alt="#"
+                    className="object-cover ~size-14/20"
+                  />
+                  <div className="flex gap-4 flex-col justify-start max-md:gap-3">
+                    <h4 className="text-brand-black-100 font-matter ~text-base/xl font-semibold max-w-3xl leading-normal tracking-wide">
+                      {e.head}
+                    </h4>
+                    <p className="text-brand-black-200 font-matter font-med max-w-lg ~text-xs/base">
+                      {e.para}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-
-        <div className="flex items-end mt-14 justify-center gap-10 ">
-          <div className="basis-full">
-            <img src="img/hero-img.png" alt="#" className="size-[650px]" />
+              );
+            })}
           </div>
 
-          <div className="bg-brand-white-500 p-5 rounded-md flex gap-5 basis-full">
-            <img
-              src={"img/code.png"}
-              alt="#"
-              className="object-cover size-20"
-            />
-            <img src="img/preview.png" alt="#" className="max-w-xl" />
+          <div className="flex items-center mt-14 max-md:mt-5 justify-center gap-16 max-lg:gap-10 max-md:flex-col-reverse max-md:gap-5">
+            <div className="max-w-2xl flex-1 max-md:max-w-md">
+              <img src="img/hero-img.png" alt="#" className="w-full" />
+            </div>
+
+            <div className="bg-brand-white-500 rounded-md max-w-3xl flex-1 w-full max-md:max-w-xl">
+              <img
+                src="img/preview.png"
+                alt="#"
+                className="w-full max-md:hidden"
+              />
+
+              <img
+                src="img/preview-mobile.png"
+                alt="#"
+                className="w-full md:hidden"
+              />
+            </div>
           </div>
         </div>
       </div>

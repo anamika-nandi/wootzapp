@@ -1,27 +1,31 @@
 import { performanceData } from "@site/src/data";
+import { twMerge } from "tailwind-merge";
 
 export function Performance() {
   return (
     <div className="min-h-screen bg-brand-black-100 pt-16 pb-20">
       <div className="container flex flex-col justify-center gap-16">
-        <h2 className="text-brand-white-100 font-matter text-4xl font-bold text-center max-w-3xl mx-auto leading-normal">
+        {/*  */}
+
+        <h2 className="text-brand-white-100 font-matter font-bold text-center max-w-3xl mx-auto ~text-2xl/4xl max-lg:max-w-md">
           Built for High{" "}
-          <span className="text-brand-orange-200">Performance</span>, {' '}
-          <span className="text-brand-orange-300">Security</span>,
-          and <span className="text-brand-green-100">Scalability</span>
+          <span className="text-brand-orange-200">Performance</span>,{" "}
+          <span className="text-brand-orange-300">Security</span>, and{" "}
+          <span className="text-brand-green-100">Scalability</span>
         </h2>
 
-        <div className="grid grid-cols-2 gap-x-5 gap-y-10 max-w-3xl mx-auto">
+        <div className="grid grid-cols-2 gap-x-5 gap-y-10 max-w-3xl mx-auto max-sm:grid-cols-1">
           {performanceData.map((data, index) => {
-            const res = index === 2 ? "col-span-2" : "";
+            const res =
+              index === 2 && window.innerWidth > 640 ? "col-span-2" : "";
 
             return (
-              <div className={`flex flex-col gap-5 ${res}`}>
-                <img src={data.img} alt="#" className="size-24" />
-                <h4 className="text-brand-white-100 font-matter font-bold text-2xl max-w-xs">
+              <div className={`flex flex-col gap-5 max-sm:gap-3 ${res}`}>
+                <img src={data.img} alt="#" className=" ~size-16/24" />
+                <h4 className="text-brand-white-100 font-matter font-bold max-md:text-xl text-2xl max-w-xs">
                   {data.head}
                 </h4>
-                <p className="text-lg text-brand-white-400 font-matter">
+                <p className="~text-sm/lg text-brand-white-400 font-matter">
                   {data.para}
                 </p>
               </div>

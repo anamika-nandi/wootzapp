@@ -10,7 +10,7 @@ import { Performance } from "../components/app/performance";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-brand-home_bg overflow-hidden">
+    <div className="min-h-screen bg-brand-home_bg overflow-x-hidden">
       <Header />
       <Hero />
       <Browsing />

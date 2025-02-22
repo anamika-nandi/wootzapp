@@ -19,21 +19,21 @@ export const partner = [
 
 export function Benefits() {
   return (
-    <div className="pt-16 container  text-brand-white-600">
-      <h2 className="text-brand-black-100 font-matter text-4xl font-bold text-center max-w-4xl mx-auto leading-normal">
+    <div className="pt-16 container text-brand-white-600 pb-24">
+      <h2 className="text-brand-black-100 font-matter ~text-2xl/4xl font-bold text-center max-w-4xl mx-auto leading-normal">
         Developer & Partner
         <span className="text-brand-orange-200"> Benefits</span>
       </h2>
 
-      <div className="flex gap-7 mt-16 justify-center">
+      <div className="grid grid-cols-3 gap-7 max-md:gap-10 mt-16 max-md:mt-5 justify-center max-lg:grid-cols-2 max-md:grid-cols-1 max-md:w-full">
         {partner.map((e) => {
           return (
-            <div className="text-center flex flex-col gap-4 items-center">
-              <img src={e.img} alt="" className="size-72" />
-              <h4 className="text-brand-black-100 font-matter text-3xl font-bold leading-normal tracking-wide">
+            <div className="text-center flex flex-col gap-4 items-center max-md:gap-3">
+              <img src={e.img} alt="#" className="max-w-3xl" />
+              <h4 className="text-brand-black-100 font-matter ~text-xl/3xl font-bold leading-normal tracking-wide">
                 {e.head}
               </h4>
-              <p className="text-brand-black-200 font-matter font-light text-lg">
+              <p className="text-brand-black-200 font-matter font-light ~text-sm/lg">
                 {e.para}
               </p>
             </div>
