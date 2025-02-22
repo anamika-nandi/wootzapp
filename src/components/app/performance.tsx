@@ -1,12 +1,27 @@
 import { performanceData } from "@site/src/data";
-import { twMerge } from "tailwind-merge";
+import { useEffect, useState } from "react";
 
 export function Performance() {
-  return (
-    <div className="min-h-screen bg-brand-black-100 pt-16 pb-20">
-      <div className="container flex flex-col justify-center gap-16">
-        {/*  */}
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
+  useEffect(() => {
+    const controller = new AbortController();
+
+    function handleResize(e) {
+      setWindowWidth(e.target.innerWidth);
+    }
+    window.addEventListener("resize", handleResize, {
+      signal: controller.signal,
+    });
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-brand-black-100 pt-24 pb-28">
+      <div className="container flex flex-col justify-center gap-16">
         <h2 className="text-brand-white-100 font-matter font-bold text-center max-w-3xl mx-auto ~text-2xl/4xl max-lg:max-w-md">
           Built for High{" "}
           <span className="text-brand-orange-200">Performance</span>,{" "}
@@ -14,23 +29,27 @@ export function Performance() {
           <span className="text-brand-green-100">Scalability</span>
         </h2>
 
-        <div className="grid grid-cols-2 gap-x-5 gap-y-10 max-w-3xl mx-auto max-sm:grid-cols-1">
-          {performanceData.map((data, index) => {
-            const res =
-              index === 2 && window.innerWidth > 640 ? "col-span-2" : "";
+        <div className="flex gap-20 max-md:flex-col max-md:gap-10 max-md:items-center">
+          <div className="grid grid-cols-2 gap-x-5 gap-y-10 max-w-2xl mx-auto max-sm:grid-cols-1">
+            {performanceData.map((data, index) => {
+              const res = index === 2 && windowWidth > 640 ? "col-span-2" : "";
+              return (
+                <div className={`flex flex-col gap-5 max-sm:gap-3 ${res}`}>
+                  <img src={data.img} alt="#" className=" ~size-16/24" />
+                  <h4 className="text-brand-white-100 font-matter font-bold max-md:text-xl text-2xl max-w-xs">
+                    {data.head}
+                  </h4>
+                  <p className="~text-sm/lg text-brand-white-400 font-matter">
+                    {data.para}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
 
-            return (
-              <div className={`flex flex-col gap-5 max-sm:gap-3 ${res}`}>
-                <img src={data.img} alt="#" className=" ~size-16/24" />
-                <h4 className="text-brand-white-100 font-matter font-bold max-md:text-xl text-2xl max-w-xs">
-                  {data.head}
-                </h4>
-                <p className="~text-sm/lg text-brand-white-400 font-matter">
-                  {data.para}
-                </p>
-              </div>
-            );
-          })}
+          <div className="max-w-xl max-h-full">
+            <img src="img/performance.png" alt="#" className="w-full" />
+          </div>
         </div>
       </div>
     </div>

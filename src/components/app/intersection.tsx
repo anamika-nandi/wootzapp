@@ -22,7 +22,7 @@ export function Intersection() {
             </div>
 
             <div className="flex flex-col gap-3 max-w-sm ax-md:max-w-full">
-              <img src="/img/payout.png" alt="#" className="size-20" />
+              <img src="/img/int-mobile.png" alt="#" className="size-20" />
               <h4 className="text-brand-black-100 font-matter tracking-wide font-semibold ~text-base/xl">
                 Mobile-First Advantage
               </h4>
@@ -39,7 +39,7 @@ export function Intersection() {
 
           <div className="flex flex-col gap-5 items-end justify-between max-lg:items-start">
             <div className="flex flex-col gap-3 max-w-sm ax-md:max-w-full">
-              <img src="/img/growth.png" alt="" className="size-20" />
+              <img src="/img/payout.png" alt="" className="size-20" />
               <h4 className="text-brand-black-100 font-matter tracking-wide font-semibold ~text-base/xl">
                 Instant Payouts & Lower Costs
               </h4>
@@ -51,7 +51,7 @@ export function Intersection() {
             </div>
 
             <div className="flex flex-col gap-3 max-w-sm ax-md:max-w-full">
-              <img src="/img/payout.png" alt="#" className="size-20" />
+              <img src="/img/int-discuss.png" alt="#" className="size-20" />
               <h4 className="text-brand-black-100 font-matter tracking-wide font-semibold ~text-base/xl">
                 Strategic Distribution
               </h4>

@@ -2,7 +2,7 @@ import { PlayStoreButton } from "../ui/play-store-button";
 
 export function Experience() {
   return (
-    <div className="container mt-[300px] relative mb-20">
+    <div className="container mt-[300px] xl:mt-[400px] relative mb-20">
       <div className="bg-brand-green-200 text-brand-white-100 flex flex-col md:flex-row py-10 rounded-3xl h-auto md:h-[500px] items-center px-5 md:px-10 relative">
         <img
           src="img/pattern.png"
