@@ -7,6 +7,7 @@ import Hero from "../components/app/hero";
 import { Intersection } from "../components/app/intersection";
 import { PartnerShip } from "../components/app/partnership";
 import { Performance } from "../components/app/performance";
+import { SectionImg } from "../components/app/section-img";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Hero />
       <Browsing />
       <Performance />
+      <SectionImg />
       <PartnerShip />
       <Benefits />
       <Intersection />

@@ -47,6 +47,12 @@
   container-type: inline-size;
 }
 
+.section-img {
+  background: url(../../static/img/section-img.png);
+  background-size: cover;
+  background-position: top 20px;
+}
+
 /* Style the arrow icon based on the container's width */
 @container (max-width: 400px) {
   .arrow-icon {

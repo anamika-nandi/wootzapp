@@ -2,7 +2,7 @@ import { PlayStoreButton } from "../ui/play-store-button";
 
 export function Experience() {
   return (
-    <div className="container mt-[300px] xl:mt-[400px] relative mb-20">
+    <div className="container mt-[300px] xl:mt-[400px] relative mb-28">
       <div className="bg-brand-green-200 text-brand-white-100 flex flex-col md:flex-row py-10 rounded-3xl h-auto md:h-[500px] items-center px-5 md:px-10 relative">
         <img
           src="img/pattern.png"
@@ -26,7 +26,7 @@ export function Experience() {
 
         <div className="flex-1 flex justify-center relative -mt-52 md:-top-32 order-1 md:order-2">
           <img
-            src="img/card.png"
+            src="img/experience-img.png"
             alt="#"
             className="w-full max-w-md md:max-w-full"
           />

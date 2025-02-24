@@ -62,7 +62,7 @@ export function PartnerShip() {
 
           <div className="flex items-center mt-14 max-md:mt-5 justify-center gap-16 max-lg:gap-10 max-md:flex-col-reverse max-md:gap-5">
             <div className="max-w-2xl flex-1 max-md:max-w-md">
-              <img src="img/hero-img.png" alt="#" className="w-full" />
+              <img src="img/partnership.png" alt="#" className="w-full" />
             </div>
 
             <div className="bg-brand-white-500 rounded-md max-w-3xl flex-1 w-full max-md:max-w-xl">

@@ -34,7 +34,7 @@ export function Intersection() {
           </div>
 
           <div className="flex items-center justify-center max-w-2xl max-md:max-w-md">
-            <img src="img/benefits.png" alt="#" className="w-full" />
+            <img src="img/intersection.png" alt="#" className="w-full" />
           </div>
 
           <div className="flex flex-col gap-5 items-end justify-between max-lg:items-start">

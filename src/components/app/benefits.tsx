@@ -1,17 +1,17 @@
 export const partner = [
   {
-    img: "img/benefits.png",
+    img: "img/benefit-1.png",
     head: "For Developers",
     para: "Access our open-source codebase on GitHub. Utilize detailed technical documentation and our SDK to build extensions that tap into a global, mobile-first audience.",
   },
 
   {
-    img: "img/benefits.png",
+    img: "img/benefit-2.png",
     head: "For Partners",
     para: "Leverage our OEM partnerships that pre-install WootzApp on millions of devices—delivering zero user acquisition cost and instant global reach. Our platform is already live with five pilot AI partners deploying data workflows.",
   },
   {
-    img: "img/benefits.png",
+    img: "img/benefit-3.png",
     head: "Distribution & Scale",
     para: "With an average of 5.2 hours of daily browser use and plans to reach 15M+ devices, our system offers unprecedented scale and cost efficiencies (as low as $0.10–$0.30 per label).",
   },
