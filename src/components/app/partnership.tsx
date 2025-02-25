@@ -14,8 +14,8 @@ const data = [
 
 export function PartnerShip() {
 	return (
-		<div className='min-h-screen pt-24 relative pb-16'>
-			<img src='img/partnership-shadow.png' alt='#' className='absolute -top-10 -right-44' />
+		<div className='min-h-screen  relative  md:pt-24 pb-16 overflow-hidden'>
+			<img src='img/partnership-shadow.png' alt='#' className='absolute -top-10 -right-16 md:-right-44 w-40' />
 
 			<div className='container'>
 				<div className='flex flex-col gap-4 items-center text-center'>
@@ -45,19 +45,19 @@ export function PartnerShip() {
 					</div>
 
 					<div className='flex items-center mt-14 max-md:mt-5 justify-center gap-16 max-lg:gap-10 max-md:flex-col-reverse max-md:gap-5'>
-						<div className='max-w-2xl flex-1 max-md:max-w-md'>
+						<div className='max-w-2xl flex-1  '>
 							<img src='img/partnership.png' alt='#' className='w-full' />
 						</div>
 
-						<div className='bg-[#EEEFE9] rounded-md max-w-3xl flex flex-1 w-full max-md:max-w-xl h-full p-5 gap-5'>
+						<div className='bg-[#EEEFE9] rounded-md  flex flex-1 w-full h-full p-5 gap-2 md:gap-5'>
 							<div>
-								<img src='img/code.png' height={100} width={100} alt='#' className=' max-md:hidden' />
+								<img src='img/code.png' alt='#' className=' w-16   md:w-24 ' />
 							</div>
 							<div className='w-full flex flex-col gap-3'>
-								<p className='text-2xl font-semibold'>Technical Superiority – Code Comparison</p>
+								<p className='md:text-2xl font-semibold'>Technical Superiority – Code Comparison</p>
 
 								<div className='bg-[#283911] rounded-lg max-h-[796px] overflow-auto'>
-									<pre className='bg-transparent text-white p-4 whitespace-pre-wrap text-sm'>
+									<pre className='bg-transparent text-white p-4 whitespace-pre-wrap  text-xs md:text-sm'>
 										{`// Traditional Platforms (e.g., Scale AI, LabelBox)
 class Traditional Platform {
   async deploy Task(config) {

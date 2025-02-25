@@ -11,17 +11,28 @@ import {SectionImg} from "../components/app/section-img";
 
 export default function Home() {
 	return (
-		<div className='min-h-screen bg-brand-home_bg '>
-			<Header />
-			<Hero />
+		<div className='min-h-screen bg-brand-[#FEFAF8] '>
+			<div className='bg-brand-home_bg'>
+				<Header />
+				<Hero />
+			</div>
 			<Browsing />
 			<Performance />
 			<SectionImg />
-			<PartnerShip />
-			{/* <Benefits /> */}
-			{/* <Intersection /> */}
-			{/* <Experience /> */}
-			{/* <Footer /> */}
+			<div className='bg-brand-home_bg'>
+				<PartnerShip />
+			</div>
+			<div className='bg-[#FEEDE5]'>
+				<Benefits />
+			</div>
+			<div
+				// linear gradient to bottom
+				className='bg-gradient-to-b from-[#FEEDE5] to-[#FEFAF8]'
+			>
+				<Intersection />
+				<Experience />
+				<Footer />
+			</div>
 		</div>
 	);
 }
