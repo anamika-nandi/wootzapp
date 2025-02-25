@@ -1,7 +1,7 @@
 export function Intersection() {
 	return (
 		<div className='h-auto bg-brand-white-200 pt-16 pb-20'>
-			<div className='container'>
+			<div className='container-custom'>
 				<h2 className='text-brand-black-100 font-matter ~text-2xl/4xl font-bold text-center max-w-lg mx-auto'>
 					At the Intersection of
 					<span className='text-brand-orange-200'> AI</span> Data and

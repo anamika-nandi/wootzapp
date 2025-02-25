@@ -11,7 +11,7 @@ import {SectionImg} from "../components/app/section-img";
 
 export default function Home() {
 	return (
-		<div className='min-h-screen bg-brand-[#FEFAF8] '>
+		<div className='min-h-screen bg-brand-[#FEFAF8]'>
 			<div className='bg-brand-home_bg'>
 				<Header />
 				<Hero />

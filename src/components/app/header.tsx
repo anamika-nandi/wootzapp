@@ -30,7 +30,7 @@ export const Header = () => {
 
 	return (
 		<div className={`sticky top-0 z-[1000] transition-all duration-300 ${isScrolled ? "bg-brand-home_bg shadow-md" : "bg-transparent"}`}>
-			<div className='flex justify-between container items-center py-5'>
+			<div className='flex justify-between container-custom items-center py-5'>
 				{/* Desktop Logo */}
 				<img src='/img/Logo.png' alt='Logo' className='max-md:hidden max-xl:w-60' />
 
@@ -63,7 +63,7 @@ export const Header = () => {
 			{/* Mobile Menu Dropdown */}
 			{isMobileMenuOpen && (
 				<div className='md:hidden fixed top-[72px] left-0 right-0 bg-brand-home_bg z-50 shadow-xl h-screen'>
-					<div className='container py-6 flex flex-col'>
+					<div className='container-custom py-6 flex flex-col'>
 						{/* Navigation Links */}
 						<div className='flex flex-col mb-8'>
 							{headerData.map((data, index) => (

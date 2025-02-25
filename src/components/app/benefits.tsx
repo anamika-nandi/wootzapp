@@ -19,7 +19,7 @@ export const partner = [
 
 export function Benefits() {
 	return (
-		<div className='pt-16 container   text-brand-white-600 pb-24'>
+		<div className='pt-16 container-custom   text-brand-white-600 pb-24'>
 			<h2 className='text-brand-black-100 font-matter ~text-2xl/4xl font-bold text-center max-w-4xl mx-auto leading-normal'>
 				Developer & Partner
 				<span className='text-brand-orange-200'> Benefits</span>

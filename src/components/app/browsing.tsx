@@ -7,7 +7,7 @@ export function Browsing() {
 			<img src='img/home-shade.png' alt='#' className='absolute bottom-0 left-0 size-52' />
 
 			<div className=''>
-				<div className='container pt-24 pb-28'>
+				<div className='container-custom pt-24 pb-28'>
 					<h2 className='text-brand-black-100 font-matter ~text-2xl/5xl font-bold text-center  max-w-2xl mx-auto tracking-normal   leading-relaxed'>
 						Turn Your Daily <span className='text-brand-orange-200'>Browsing</span> into Instant <span className='text-brand-green-100'>Earnings</span>
 					</h2>

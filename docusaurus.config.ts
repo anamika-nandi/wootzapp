@@ -19,7 +19,7 @@ const config: Config = {
 
 	stylesheets: [
 		{
-			href: "/src/css/custom.css",
+			href: "./src/css/custom.css",
 		},
 	],
 

@@ -17,7 +17,7 @@ export function PartnerShip() {
 		<div className='min-h-screen  relative  md:pt-24 pb-16 overflow-hidden'>
 			<img src='img/partnership-shadow.png' alt='#' className='absolute -top-10 -right-16 md:-right-44 w-40' />
 
-			<div className='container'>
+			<div className='container-custom'>
 				<div className='flex flex-col gap-4 items-center text-center'>
 					<h2 className='text-brand-black-100 font-matter ~text-xl/4xl font-bold text-center max-w-2xl mx-auto'>
 						A Platform Built on Extensibility and
