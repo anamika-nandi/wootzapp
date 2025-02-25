@@ -1,11 +1,11 @@
 export function Footer() {
 	return (
 		<div className='bg-brand-black-200 py-14 text-brand-white-700 font-matter relative'>
-			<img src='img/footer-img.png' className='absolute -top-44 right-0 max-sm:w-44 max-sm:-top-24' alt='#' />
+			<img src='img/footer-img.png' className='absolute -top-24 sm:-top-44 right-0 w-44 sm:w-auto' alt='Footer decoration' />
 
 			<div className='container-custom flex flex-col md:flex-row justify-between gap-8 flex-wrap'>
 				<div className='flex flex-col gap-4'>
-					<img src='/img/logo-footer.png' alt='WootzApp Logo' className='h-14 w-60 max-md:h-10 max-md:w-44' />
+					<img src='/img/logo-footer.png' alt='WootzApp Logo' className='h-10 w-44 md:h-14 md:w-60' />
 					<p className='tracking-wide ~text-xs/base'>{`© ${new Date().getFullYear()} WootzApp Inc. All Rights Reserved`}</p>
 				</div>
 

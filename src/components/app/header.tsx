@@ -32,7 +32,7 @@ export const Header = () => {
 		<div className={`sticky top-0 z-[1000] transition-all duration-300 ${isScrolled ? "bg-brand-home_bg shadow-md" : "bg-transparent"}`}>
 			<div className='flex justify-between container-custom items-center py-5'>
 				{/* Desktop Logo */}
-				<img src='/img/Logo.png' alt='Logo' className='max-md:hidden max-xl:w-60' />
+				<img src='/img/Logo.png' alt='Logo' className='hidden md:block w-60 xl:w-auto' />
 
 				{/* Mobile Logo */}
 				<img src='/img/mobile-logo.png' alt='Logo' className='md:hidden w-44' />

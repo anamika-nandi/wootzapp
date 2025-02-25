@@ -4,7 +4,6 @@ export const partner = [
 		head: "For Developers",
 		para: "Access our open-source codebase on GitHub. Utilize detailed technical documentation and our SDK to build extensions that tap into a global, mobile-first audience.",
 	},
-
 	{
 		img: "img/benefit-2.png",
 		head: "For Partners",
@@ -19,17 +18,17 @@ export const partner = [
 
 export function Benefits() {
 	return (
-		<div className='pt-16 container-custom   text-brand-white-600 pb-24'>
+		<div className='pt-16 container-custom text-brand-white-600 pb-24'>
 			<h2 className='text-brand-black-100 font-matter ~text-2xl/4xl font-bold text-center max-w-4xl mx-auto leading-normal'>
 				Developer & Partner
 				<span className='text-brand-orange-200'> Benefits</span>
 			</h2>
 
-			<div className='grid grid-cols-3 gap-7 max-md:gap-10 mt-16 max-md:mt-5 justify-center max-lg:grid-cols-2 max-md:grid-cols-1 max-md:w-full'>
-				{partner.map(e => {
+			<div className='grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10 md:gap-7 mt-5 md:mt-16 justify-center w-full'>
+				{partner.map((e, index) => {
 					return (
-						<div className='text-center flex flex-col gap-4 items-center max-md:gap-3'>
-							<img src={e.img} alt='#' className='max-w-3xl' />
+						<div key={index} className='text-center flex flex-col gap-3 md:gap-4 items-center'>
+							<img src={e.img} alt={`Benefit icon for ${e.head}`} className='max-w-3xl' />
 							<h4 className='text-brand-black-100 font-matter ~text-xl/3xl font-bold leading-normal tracking-wide'>{e.head}</h4>
 							<p className='text-brand-black-200 font-matter font-light ~text-sm/lg'>{e.para}</p>
 						</div>
