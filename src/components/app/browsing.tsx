@@ -8,7 +8,7 @@ export function Browsing() {
 
 			<div className=''>
 				<div className='container pt-24 pb-28'>
-					<h2 className='text-brand-black-100 font-matter ~text-2xl/4xl font-bold text-center max-lg:max-w-md max-w-xl mx-auto leading-snug'>
+					<h2 className='text-brand-black-100 font-matter ~text-2xl/5xl font-bold text-center  max-w-2xl mx-auto tracking-normal   leading-relaxed'>
 						Turn Your Daily <span className='text-brand-orange-200'>Browsing</span> into Instant <span className='text-brand-green-100'>Earnings</span>
 					</h2>
 

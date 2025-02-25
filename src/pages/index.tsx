@@ -14,10 +14,10 @@ export default function Home() {
 		<div className='min-h-screen bg-brand-home_bg '>
 			<Header />
 			<Hero />
-			{/* <Browsing /> */}
-			{/* <Performance /> */}
-			{/* <SectionImg /> */}
-			{/* <PartnerShip /> */}
+			<Browsing />
+			<Performance />
+			<SectionImg />
+			<PartnerShip />
 			{/* <Benefits /> */}
 			{/* <Intersection /> */}
 			{/* <Experience /> */}
