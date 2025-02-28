@@ -23,7 +23,7 @@ export function Footer() {
 				<div className='flex flex-col gap-4'>
 					<h3 className='font-medium ~text-base/2xl'>Necessary Links</h3>
 					<div className='flex flex-col gap-2'>
-						<a href='#' className='hover:text-brand-orange-200 ~text-xs/base font-normal tracking-wide'>
+						<a href='/docs/intro' className='hover:text-brand-orange-200 ~text-xs/base font-normal tracking-wide'>
 							Technical Docs
 						</a>
 						<a href='#' className='hover:text-brand-orange-200 ~text-xs/base font-normal tracking-wide'>
