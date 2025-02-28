@@ -3,7 +3,7 @@ import {PlayStoreButton} from "../ui/play-store-button";
 export default function Hero() {
 	return (
 		<div className='relative w-full h-full'>
-			<div className='absolute -top-32 md:-top-40'>
+			<div className='absolute -top-32 md:-top-16'>
 				<img src='img/home-shade.png' className='object-cover h-[170px]' alt='Top decoration' />
 			</div>
 			<div className='absolute w-full h-full'>
