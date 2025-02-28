@@ -68,7 +68,7 @@ export default function NavbarLayout({children}: Props): ReactNode {
 				// Apply max-width style for home page
 			)}
 		>
-			<div className={`w-full ${isHomePage ? "container-custom h-[70px]" : ""}`}>{children}</div>
+			<div className={`w-full ${isHomePage ? "container-custom md:h-[70px]" : ""}`}>{children}</div>
 			<NavbarBackdrop onClick={mobileSidebar.toggle} />
 			<NavbarMobileSidebar />
 		</nav>

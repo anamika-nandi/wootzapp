@@ -39,7 +39,7 @@ ${JSON.stringify(item, null, 2)}`,
 
 function NavbarContentLayout({left, right}: {left: ReactNode; right: ReactNode}) {
 	return (
-		<div className='navbar__inner'>
+		<div className='navbar__inner '>
 			<div className='navbar__items'>{left}</div>
 			<div className='navbar__items navbar__items--right'>{right}</div>
 		</div>
@@ -58,9 +58,7 @@ export default function NavbarContent(): ReactNode {
 		<NavbarContentLayout
 			left={
 				// TODO stop hardcoding items?
-				<>
-					{!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
-
+				<div className='flex items-center h-[44px] md:h-auto w-full '>
 					<div className='min-w-[160px]'>
 						<NavbarLogo />
 					</div>
@@ -68,7 +66,8 @@ export default function NavbarContent(): ReactNode {
 					<div className='flex items-center justify-center w-full'>
 						<NavbarItems items={leftItems} />
 					</div>
-				</>
+					{!mobileSidebar.disabled && <NavbarMobileSidebarToggle />}
+				</div>
 			}
 			right={
 				// TODO stop hardcoding items?
