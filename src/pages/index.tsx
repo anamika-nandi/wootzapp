@@ -34,7 +34,6 @@ export default function Home() {
 				>
 					<Intersection />
 					<Experience />
-					<Footer />
 				</div>
 			</div>
 		</Layout>
