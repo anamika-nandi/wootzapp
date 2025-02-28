@@ -2,6 +2,9 @@
 @tailwind base;
 @tailwind components;
 
+:root {
+}
+
 @font-face {
 	font-family: "Matter";
 	src: url("/fonts/Matter-Regular.ttf") format("truetype");
