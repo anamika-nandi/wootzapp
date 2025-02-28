@@ -3,6 +3,7 @@ import clsx from "clsx";
 import {useThemeConfig} from "@docusaurus/theme-common";
 import {useHideableNavbar, useNavbarMobileSidebar} from "@docusaurus/theme-common/internal";
 import {translate} from "@docusaurus/Translate";
+import {useLocation} from "@docusaurus/router";
 import NavbarMobileSidebar from "@theme/Navbar/MobileSidebar";
 import type {Props} from "@theme/Navbar/Layout";
 
@@ -18,6 +19,10 @@ export default function NavbarLayout({children}: Props): ReactNode {
 	} = useThemeConfig();
 	const mobileSidebar = useNavbarMobileSidebar();
 	const {navbarRef, isNavbarVisible} = useHideableNavbar(hideOnScroll);
+	const location = useLocation();
+
+	// Check if current page is home page
+	const isHomePage = location.pathname === "/" || location.pathname === "";
 
 	// Add state for scroll detection
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -60,9 +65,10 @@ export default function NavbarLayout({children}: Props): ReactNode {
 				},
 				// Apply background color and shadow based on scroll state
 				isScrolled ? styles.navbarScrolled : styles.navbarTransparent
+				// Apply max-width style for home page
 			)}
 		>
-			{children}
+			<div className={`w-full ${isHomePage ? "container-custom h-[70px]" : ""}`}>{children}</div>
 			<NavbarBackdrop onClick={mobileSidebar.toggle} />
 			<NavbarMobileSidebar />
 		</nav>
