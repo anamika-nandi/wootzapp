@@ -80,7 +80,7 @@ export default function NavbarContent(): ReactNode {
 							Get Started
 						</button>
 					</div>
-					<NavbarColorModeToggle className={styles.colorModeToggle} />
+					{/* <NavbarColorModeToggle className={styles.colorModeToggle} /> */}
 					{!searchBarItem && (
 						<NavbarSearch>
 							<SearchBar />
