@@ -88,9 +88,9 @@ const config: Config = {
 					to: "/docs/intro",
 				},
 
-				{to: "/community", label: "community", position: "left"},
-				{to: "/about", label: "About", position: "left"},
 				{to: "/blog", label: "Blog", position: "left"},
+				{to: "/community", label: "Community", position: "left"},
+				{to: "/about", label: "About", position: "left"},
 			],
 		},
 		footer: {
